@@ -270,7 +270,7 @@ namespace SouthernBug.App.Window.TablesEdior
             var worker = new BackgroundWorker();
             worker.DoWork += (ss, ee) => excelExporter.Export(worker, ee);
 
-            var workerForm = new WorkerForm(worker) {LoadingTitle = "Идет экспорт..."};
+            var workerForm = new WorkerForm(worker) {LoadingTitle = "Відбувається експорт..." };
             workerForm.ShowDialog();
             var result = workerForm.Result;
             workerForm.Dispose();
@@ -299,6 +299,9 @@ namespace SouthernBug.App.Window.TablesEdior
             }
         }
 
-        
+        private void buttonTermsHelp_Click(object sender, EventArgs e)
+        {
+            new TermsHelpForm().Show();
+        }
     }
 }

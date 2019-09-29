@@ -47,7 +47,7 @@
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(259, 23);
             this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "Идут вычисления...";
+            this.labelTitle.Text = "Тривають обчислення...";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // WorkerForm
@@ -57,11 +57,12 @@
             this.ClientSize = new System.Drawing.Size(284, 111);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.progressBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "WorkerForm";
-            this.Text = "Идут вычисления...";
+            this.Text = "Тривають обчислення...";
             this.ResumeLayout(false);
 
         }

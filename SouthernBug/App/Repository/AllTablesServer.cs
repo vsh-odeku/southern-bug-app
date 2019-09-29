@@ -22,9 +22,9 @@ namespace SouthernBug.App.Repository
 
         private void InitTables()
         {
-            tablesInfo.AddGroup("Оперативные", Tables.Names.OperTables);
-            tablesInfo.AddGroup("Базовые", Tables.Names.BasicTables);
-            tablesInfo.AddGroup("Посты", Tables.Names.PostTablesDic.Keys);
+            tablesInfo.AddGroup("Оперативні", Tables.Names.OperTables);
+            tablesInfo.AddGroup("Базові", Tables.Names.BasicTables);
+            tablesInfo.AddGroup("Криві витрат води", Tables.Names.PostTablesDic.Keys);
         }
     }
 }

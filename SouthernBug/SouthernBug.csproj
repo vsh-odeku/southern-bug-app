@@ -190,6 +190,12 @@
     <Compile Include="App\Window\Calculations\CalculationsForm.Designer.cs">
       <DependentUpon>CalculationsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="App\Window\TermsHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Window\TermsHelpForm.Designer.cs">
+      <DependentUpon>TermsHelpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="App\Window\WorkerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App\Window\Calculations\CalculationsForm.resx">
       <DependentUpon>CalculationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Window\TermsHelpForm.resx">
+      <DependentUpon>TermsHelpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App\Window\WorkerForm.resx">
       <DependentUpon>WorkerForm.cs</DependentUpon>

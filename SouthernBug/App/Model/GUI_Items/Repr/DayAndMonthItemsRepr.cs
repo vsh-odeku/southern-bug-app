@@ -22,12 +22,12 @@ namespace SouthernBug.App.Model.GUI_Items.Repr
 
         protected override void FillModel()
         {
-            GenerateMonth(1, "января", Days31);
-            GenerateMonth(2, "февраля", Days28);
-            GenerateMonth(3, "марта", Days31);
-            GenerateMonth(4, "апреля", 5, 10);
+            GenerateMonth(1, "січня", Days31);
+            GenerateMonth(2, "лютого", Days28);
+            GenerateMonth(3, "березня", Days31);
+            GenerateMonth(4, "квітня", 5, 10);
 
-            model.Add(Sm, Sm);
+            model.Add("максимальні снігозапаси води в сніговому покриві Sm", Sm);
         }
 
         private void GenerateMonth(int monthNumber, string monthPostfix, params int[] days)

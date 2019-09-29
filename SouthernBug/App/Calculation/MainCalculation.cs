@@ -75,8 +75,8 @@ namespace SouthernBug.App.Calculation
                 {
                     Console.WriteLine(exc);
 
-                    MessageBox.Show($"Вычисления были прерваны из-за ошибки: \n\n{exc.Message}",
-                        "Ошибка",
+                    MessageBox.Show($"Обчислення були перервані через помилку: \n\n{exc.Message}",
+                        "Помилка",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 }

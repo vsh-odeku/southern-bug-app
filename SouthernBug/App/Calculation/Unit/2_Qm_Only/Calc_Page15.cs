@@ -21,6 +21,8 @@ namespace SouthernBug.App.Calculation.Unit._2_Qm_Only
 
         private void Calc_DOP()
         {
+            tables.CalcsHydro.AddColumn(tables.BazaInfoHydro.Column("SigmQm"));
+
             switch (userInput[CalculationsForm.Arg_AllowedRange])
             {
                 case AllowedRangeItemsRepr.Standard:
@@ -39,8 +41,6 @@ namespace SouthernBug.App.Calculation.Unit._2_Qm_Only
 
         private void Calc_DOP_standard()
         {
-            tables.CalcsHydro.AddColumn(tables.BazaInfoHydro.Column("SigmQm"));
-
             tables.CalcsHydro.IterateRows(row =>
             {
                 var res = row["SigmQm"].DoubleValue * MainCalcConstants.SigmDOP;

@@ -145,7 +145,7 @@ namespace SouthernBug.App.Calculation.Unit._1_Y_Only
 
         private void Calc_PY()
         {
-            var interpTable = new TableProcessing.Table("Interpolate PY");
+            var interpTable = new TableProcessing.Table("Інтерполяція PY");
             tables.AddCustomTable(interpTable);
 
             interpTable.AddColumn("PY");

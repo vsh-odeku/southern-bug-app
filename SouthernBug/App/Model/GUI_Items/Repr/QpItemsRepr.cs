@@ -17,12 +17,12 @@ namespace SouthernBug.App.Model.GUI_Items.Repr
 
         protected override void FillModel()
         {
-            model.Add("Влажность почвы W 0-100", Wj);
-            model.Add("Декабрь", Q12);
-            model.Add("Январь", Q01);
-            model.Add("Февраль", Q02);
-            model.Add("Март", Q03);
-            model.Add("Перед половодьем", QPB);
+            model.Add("запаси вологи в ґрунті W 0-100 см перед водопіллям", Wj);
+            model.Add("середня витрата води в грудні", Q12);
+            model.Add("середня витрата води в січні", Q01);
+            model.Add("середня витрата води в лютому", Q02);
+            model.Add("середня витрата води в березні", Q03);
+            model.Add("витрата води перед початком водопілля", QPB);
         }
     }
 }

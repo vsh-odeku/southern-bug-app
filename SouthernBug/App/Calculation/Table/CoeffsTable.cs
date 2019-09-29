@@ -4,7 +4,7 @@
     {
         public CoeffsTable(string name) : base(name)
         {
-            AddColumns("Уравнение", "a", "b");
+            AddColumns("Рівняння", "a", "b");
         }
     }
 }

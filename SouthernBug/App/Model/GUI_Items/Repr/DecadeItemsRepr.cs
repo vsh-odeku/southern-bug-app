@@ -7,7 +7,7 @@ namespace SouthernBug.App.Model.GUI_Items.Repr
     {
         public static readonly string[] MonthNames =
         {
-            "нулября", "января", "февраля", "марта", "апреля"
+            "???", "січня", "лютого", "березня", "квітня"
         };
 
         public const string OptCalc = "OptCalc";
@@ -25,7 +25,7 @@ namespace SouthernBug.App.Model.GUI_Items.Repr
                     CreateDecadeName(month, decade));
 
             var calcOptName = (string)Data;
-            model.Add($"Рассчитать {calcOptName}", OptCalc);
+            model.Add(calcOptName, OptCalc);
         }
 
         private string CreateDecadeName(int month, int decade)

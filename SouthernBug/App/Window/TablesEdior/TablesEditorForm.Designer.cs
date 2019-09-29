@@ -42,6 +42,7 @@
             this.comboBoxTableName = new System.Windows.Forms.ComboBox();
             this.tableYearGroupBox = new System.Windows.Forms.GroupBox();
             this.comboBoxTableYear = new System.Windows.Forms.ComboBox();
+            this.buttonTermsHelp = new System.Windows.Forms.Button();
             this.panelRoot = new System.Windows.Forms.Panel();
             this.panelMainContent = new System.Windows.Forms.Panel();
             this.tableWrapperPanel = new System.Windows.Forms.Panel();
@@ -89,7 +90,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(984, 625);
+            this.dataGridView1.Size = new System.Drawing.Size(1129, 625);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView1_DefaultValuesNeeded);
             // 
@@ -99,12 +100,13 @@
             this.headerLeftFlowLayoutPanel.Controls.Add(this.tableTypeGroupBox);
             this.headerLeftFlowLayoutPanel.Controls.Add(this.tableNameGroupBox);
             this.headerLeftFlowLayoutPanel.Controls.Add(this.tableYearGroupBox);
+            this.headerLeftFlowLayoutPanel.Controls.Add(this.buttonTermsHelp);
             this.headerLeftFlowLayoutPanel.Location = new System.Drawing.Point(4, 4);
             this.headerLeftFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
             this.headerLeftFlowLayoutPanel.Name = "headerLeftFlowLayoutPanel";
             this.headerLeftFlowLayoutPanel.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.headerTableLayoutPanel.SetRowSpan(this.headerLeftFlowLayoutPanel, 2);
-            this.headerLeftFlowLayoutPanel.Size = new System.Drawing.Size(733, 75);
+            this.headerLeftFlowLayoutPanel.Size = new System.Drawing.Size(929, 70);
             this.headerLeftFlowLayoutPanel.TabIndex = 4;
             // 
             // tableTypeGroupBox
@@ -115,10 +117,10 @@
             this.tableTypeGroupBox.Location = new System.Drawing.Point(20, 10);
             this.tableTypeGroupBox.Margin = new System.Windows.Forms.Padding(12, 3, 3, 3);
             this.tableTypeGroupBox.Name = "tableTypeGroupBox";
-            this.tableTypeGroupBox.Size = new System.Drawing.Size(315, 53);
+            this.tableTypeGroupBox.Size = new System.Drawing.Size(365, 53);
             this.tableTypeGroupBox.TabIndex = 7;
             this.tableTypeGroupBox.TabStop = false;
-            this.tableTypeGroupBox.Text = "Тип данных";
+            this.tableTypeGroupBox.Text = "Тип даних";
             // 
             // tableTypeFlowLayoutPanel
             // 
@@ -130,7 +132,7 @@
             this.tableTypeFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableTypeFlowLayoutPanel.Location = new System.Drawing.Point(3, 22);
             this.tableTypeFlowLayoutPanel.Name = "tableTypeFlowLayoutPanel";
-            this.tableTypeFlowLayoutPanel.Size = new System.Drawing.Size(309, 28);
+            this.tableTypeFlowLayoutPanel.Size = new System.Drawing.Size(359, 28);
             this.tableTypeFlowLayoutPanel.TabIndex = 0;
             // 
             // radioButton1
@@ -138,44 +140,44 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(3, 3);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(126, 22);
+            this.radioButton1.Size = new System.Drawing.Size(109, 22);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Оперативные";
+            this.radioButton1.Text = "Оперативні";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(135, 3);
+            this.radioButton2.Location = new System.Drawing.Point(118, 3);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(92, 22);
+            this.radioButton2.Size = new System.Drawing.Size(75, 22);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Базовые";
+            this.radioButton2.Text = "Базові";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(233, 3);
+            this.radioButton3.Location = new System.Drawing.Point(199, 3);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(73, 22);
+            this.radioButton3.Size = new System.Drawing.Size(157, 22);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Посты";
+            this.radioButton3.Text = "Криві витрат води";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // tableNameGroupBox
             // 
             this.tableNameGroupBox.Controls.Add(this.comboBoxTableName);
-            this.tableNameGroupBox.Location = new System.Drawing.Point(358, 10);
+            this.tableNameGroupBox.Location = new System.Drawing.Point(408, 10);
             this.tableNameGroupBox.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.tableNameGroupBox.Name = "tableNameGroupBox";
             this.tableNameGroupBox.Size = new System.Drawing.Size(259, 55);
             this.tableNameGroupBox.TabIndex = 6;
             this.tableNameGroupBox.TabStop = false;
-            this.tableNameGroupBox.Text = "Таблица";
+            this.tableNameGroupBox.Text = "Таблиця";
             // 
             // comboBoxTableName
             // 
@@ -190,13 +192,13 @@
             // tableYearGroupBox
             // 
             this.tableYearGroupBox.Controls.Add(this.comboBoxTableYear);
-            this.tableYearGroupBox.Location = new System.Drawing.Point(630, 10);
+            this.tableYearGroupBox.Location = new System.Drawing.Point(680, 10);
             this.tableYearGroupBox.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.tableYearGroupBox.Name = "tableYearGroupBox";
             this.tableYearGroupBox.Size = new System.Drawing.Size(92, 55);
             this.tableYearGroupBox.TabIndex = 7;
             this.tableYearGroupBox.TabStop = false;
-            this.tableYearGroupBox.Text = "Год";
+            this.tableYearGroupBox.Text = "Рік";
             this.tableYearGroupBox.Visible = false;
             // 
             // comboBoxTableYear
@@ -209,6 +211,18 @@
             this.comboBoxTableYear.Size = new System.Drawing.Size(86, 26);
             this.comboBoxTableYear.TabIndex = 3;
             // 
+            // buttonTermsHelp
+            // 
+            this.buttonTermsHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonTermsHelp.Location = new System.Drawing.Point(800, 17);
+            this.buttonTermsHelp.Margin = new System.Windows.Forms.Padding(25, 10, 0, 3);
+            this.buttonTermsHelp.Name = "buttonTermsHelp";
+            this.buttonTermsHelp.Size = new System.Drawing.Size(121, 45);
+            this.buttonTermsHelp.TabIndex = 7;
+            this.buttonTermsHelp.Text = "Умовні\r\nпозначення";
+            this.buttonTermsHelp.UseVisualStyleBackColor = true;
+            this.buttonTermsHelp.Click += new System.EventHandler(this.buttonTermsHelp_Click);
+            // 
             // panelRoot
             // 
             this.panelRoot.Controls.Add(this.panelMainContent);
@@ -216,7 +230,7 @@
             this.panelRoot.Location = new System.Drawing.Point(0, 0);
             this.panelRoot.Margin = new System.Windows.Forms.Padding(4);
             this.panelRoot.Name = "panelRoot";
-            this.panelRoot.Size = new System.Drawing.Size(984, 711);
+            this.panelRoot.Size = new System.Drawing.Size(1129, 711);
             this.panelRoot.TabIndex = 1;
             // 
             // panelMainContent
@@ -227,7 +241,7 @@
             this.panelMainContent.Location = new System.Drawing.Point(0, 0);
             this.panelMainContent.Margin = new System.Windows.Forms.Padding(4);
             this.panelMainContent.Name = "panelMainContent";
-            this.panelMainContent.Size = new System.Drawing.Size(984, 711);
+            this.panelMainContent.Size = new System.Drawing.Size(1129, 711);
             this.panelMainContent.TabIndex = 5;
             this.panelMainContent.Visible = false;
             // 
@@ -237,7 +251,7 @@
             this.tableWrapperPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableWrapperPanel.Location = new System.Drawing.Point(0, 86);
             this.tableWrapperPanel.Name = "tableWrapperPanel";
-            this.tableWrapperPanel.Size = new System.Drawing.Size(984, 625);
+            this.tableWrapperPanel.Size = new System.Drawing.Size(1129, 625);
             this.tableWrapperPanel.TabIndex = 6;
             // 
             // headerTableLayoutPanel
@@ -251,34 +265,34 @@
             this.headerTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.headerTableLayoutPanel.Name = "headerTableLayoutPanel";
-            this.headerTableLayoutPanel.RowCount = 2;
+            this.headerTableLayoutPanel.RowCount = 3;
             this.headerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.headerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.headerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.headerTableLayoutPanel.Size = new System.Drawing.Size(984, 86);
+            this.headerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.headerTableLayoutPanel.Size = new System.Drawing.Size(1129, 86);
             this.headerTableLayoutPanel.TabIndex = 5;
             // 
             // buttonSendToExcel
             // 
             this.buttonSendToExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSendToExcel.Location = new System.Drawing.Point(820, 46);
+            this.buttonSendToExcel.Location = new System.Drawing.Point(952, 42);
             this.buttonSendToExcel.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.buttonSendToExcel.Name = "buttonSendToExcel";
-            this.buttonSendToExcel.Size = new System.Drawing.Size(152, 32);
+            this.buttonSendToExcel.Size = new System.Drawing.Size(165, 32);
             this.buttonSendToExcel.TabIndex = 5;
-            this.buttonSendToExcel.Text = "Отправить в Excel";
+            this.buttonSendToExcel.Text = "Відправити в Excel";
             this.buttonSendToExcel.UseVisualStyleBackColor = true;
             this.buttonSendToExcel.Click += new System.EventHandler(this.ButtonSendToExcel_Click);
             // 
             // buttonSave
             // 
             this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSave.Location = new System.Drawing.Point(870, 6);
+            this.buttonSave.Location = new System.Drawing.Point(1015, 6);
             this.buttonSave.Margin = new System.Windows.Forms.Padding(3, 6, 12, 3);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(102, 32);
+            this.buttonSave.Size = new System.Drawing.Size(102, 30);
             this.buttonSave.TabIndex = 6;
-            this.buttonSave.Text = "Сохранить";
+            this.buttonSave.Text = "Зберегти";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
@@ -286,7 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 711);
+            this.ClientSize = new System.Drawing.Size(1129, 711);
             this.Controls.Add(this.panelRoot);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -333,6 +347,7 @@
         private System.Windows.Forms.Panel tableWrapperPanel;
         private System.Windows.Forms.Button buttonSendToExcel;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonTermsHelp;
     }
 }
 

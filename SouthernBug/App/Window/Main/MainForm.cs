@@ -35,16 +35,6 @@ namespace SouthernBug.App.Window.Main
             form.Show();
         }
 
-        private void AboutMenuItem2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(
-                "Программный комплекс \"Южный Буг\"" +
-                $"\nВерсия: {Constants.Version} ({Constants.Date})" +
-                "\n\nАвтор: Вадим Шатохин [К-45]",
-                "О программе",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             Text = Constants.MainFormTitle;

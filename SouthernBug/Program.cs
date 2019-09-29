@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using SouthernBug.App;
+using SouthernBug.App.Window;
 
 namespace SouthernBug
 {

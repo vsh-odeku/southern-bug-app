@@ -10,7 +10,7 @@ namespace SouthernBug.App.Calculation.Table
 
         public void SetUserInput(Dictionary<string, string> userInput)
         {
-            AddColumns("Key", "Value");
+            AddColumns("Змінна", "Значення");
 
             foreach (var entry in userInput) AddRow(entry.Key, entry.Value);
         }

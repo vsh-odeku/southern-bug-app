@@ -53,11 +53,11 @@ namespace SouthernBug.App.Calculation
             Result = CreateResultTable();
             ResultEstimation = CreateEstimationTable();
 
-            CalcsHydro = new CalcsHydroTable("Расчеты - Hydro", OperInfoHydro);
-            CalcsMeteo = new CalcMeteoTable("Расчеты - Meteo", OperInfoMeteo);
-            CoeffsTable = new CoeffsTable("Коэффициенты");
+            CalcsHydro = new CalcsHydroTable("Розрахунки - Hydro", OperInfoHydro);
+            CalcsMeteo = new CalcMeteoTable("Розрахунки - Meteo", OperInfoMeteo);
+            CoeffsTable = new CoeffsTable("Коефіцієнти");
 
-            UserInputTable = new Table.UserInputTable("Пользовательский ввод");
+            UserInputTable = new Table.UserInputTable("Введені користувачем дані");
         }
 
         public void AddCustomTableIfNotExists(TableProcessing.Table newTable)
@@ -94,7 +94,7 @@ namespace SouthernBug.App.Calculation
             outputTables
                 .Select(t => t.DataTable)
                 .ToList()
-                .ForEach(t => tablesDump.AddTable("Вычисления", t));
+                .ForEach(t => tablesDump.AddTable("Розрахунки", t));
 
             return tablesDump;
         }
@@ -123,7 +123,7 @@ namespace SouthernBug.App.Calculation
 
         public string GetResultTableName()
         {
-            return "Прогноз " + GetForecastName();
+            return "Прогноз";
         }
 
         public TableProcessing.Table CreateEstimationTable()
@@ -133,7 +133,7 @@ namespace SouthernBug.App.Calculation
 
         public string GetEstimationTableName()
         {
-            return "Оценка прогноза " + GetForecastName();
+            return "Оцінка прогнозу";
         }
 
         private string GetForecastName()

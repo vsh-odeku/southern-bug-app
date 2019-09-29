@@ -13,8 +13,8 @@ namespace SouthernBug.App.Model.GUI_Items.Repr
 
         protected override void FillModel()
         {
-            model.Add("Расчет dS", CalcDs);
-            model.Add("Принять dS из таблицы", TakeDs);
+            model.Add("Розрахувати dS", CalcDs);
+            model.Add("Прийняти dS із таблиці OPER_INFO_HYDRO", TakeDs);
         }
     }
 }

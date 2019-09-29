@@ -141,12 +141,27 @@ namespace SouthernBug.App.Window.Calculations
         private MainCalculation CreateCalculation(object sender)
         {
             var userInput = getUserInput();
-            userInput[Arg_ForecastType] = ((Button) sender).Text;
-
+            userInput[Arg_ForecastType] = DetectForecastType((Button)sender);
             GetExtraData(userInput);
-
             var calcArg = new ConstructorArgument(MainCalculation.ArgUserInput, userInput);
             return Context.Kernel.Get<MainCalculation>(calcArg);
+        }
+
+        private string DetectForecastType(Button button)
+        {
+            switch (button.Name)
+            {
+                case "YButton":
+                    return ForecastTypes.Y;
+                case "QmButton":
+                    return ForecastTypes.Qm;
+                case "D1Button":
+                    return ForecastTypes.D1;
+                case "D2Button":
+                    return ForecastTypes.D2;
+                default:
+                    throw new Exception("Unknown button name: " + button.Name);
+            }
         }
 
         private void GetExtraData(Dictionary<string, string> userInput)
@@ -154,9 +169,14 @@ namespace SouthernBug.App.Window.Calculations
             var forecastType = userInput[Arg_ForecastType];
             CalculationExtraArgsForm.Mode? mode = null;
 
-            if (forecastType == "D1") mode = CalculationExtraArgsForm.Mode.D1;
-
-            if (forecastType == "D2") mode = CalculationExtraArgsForm.Mode.D2;
+            if (forecastType == ForecastTypes.D1)
+            {
+                mode = CalculationExtraArgsForm.Mode.D1;
+            }
+            else if (forecastType == ForecastTypes.D2)
+            {
+                mode = CalculationExtraArgsForm.Mode.D2;
+            }
 
             if (!mode.HasValue)
                 return;

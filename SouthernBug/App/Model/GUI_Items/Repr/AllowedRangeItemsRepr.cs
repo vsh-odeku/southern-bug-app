@@ -14,9 +14,9 @@ namespace SouthernBug.App.Model.GUI_Items.Repr
 
         protected override void FillModel()
         {
-            model.Add("Стандарный", Standard);
-            model.Add("В 10%-ном диапазоне", Percent10);
-            model.Add("В 20%-ном диапазоне", Percent20);
+            model.Add("В 10%-му діапазоні", Percent10);
+            model.Add("В 20%-му діапазоні", Percent20);
+            model.Add("В 25%-му діапазоні", Standard);
         }
     }
 }

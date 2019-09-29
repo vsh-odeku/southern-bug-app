@@ -14,9 +14,9 @@ namespace SouthernBug.App.Model.GUI_Items.Repr
 
         protected override void FillModel()
         {
-            model.Add("Около нормы", NearNorm);
-            model.Add("Выше нормы", AboveNorm);
-            model.Add("Ниже нормы", BelowNorm);
+            model.Add("Очікуються близько норми", NearNorm);
+            model.Add("Очікуються вище норми", AboveNorm);
+            model.Add("Очікуються нижче норми", BelowNorm);
         }
     }
 }
