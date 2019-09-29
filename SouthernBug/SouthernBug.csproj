@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4B523C5-284F-49B0-A7E3-B1FFDB0295AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SouthernBug</RootNamespace>
+    <AssemblyName>SouthernBug</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sb.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.87.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.87.1\lib\net35\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.1.0\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=3.20.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.3.20.0\lib\net35\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net35\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.106.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.106.0\lib\net20\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.106.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.106.0\lib\net20\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading, Version=1.0.2856.102, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\TaskParallelLibrary.1.0.2856.0\lib\Net35\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\Calculation\CalcBranch.cs" />
+    <Compile Include="App\Calculation\CalcConstants.cs" />
+    <Compile Include="App\Calculation\CalcUtils.cs" />
+    <Compile Include="App\Calculation\Converter\CvYColumnNameConverter.cs" />
+    <Compile Include="App\Calculation\MainCalcUnits.cs" />
+    <Compile Include="App\Calculation\Table\CalcMeteoTable.cs" />
+    <Compile Include="App\Calculation\Table\CalcsHydroTable.cs" />
+    <Compile Include="App\Calculation\Table\UserInputTable.cs" />
+    <Compile Include="App\Calculation\Unit\0_Always\Calc_Page04_05_BlockDe1_1.cs" />
+    <Compile Include="App\Calculation\Unit\0_Always\Calc_Page06_BlockDe3.cs" />
+    <Compile Include="App\Calculation\Unit\0_Always\Calc_Page00_UserInput.cs" />
+    <Compile Include="App\Calculation\Unit\3_D_Only\Calc_Page17_BlockZe1_2_And_1_3_And_Page18_All.cs" />
+    <Compile Include="App\Calculation\Unit\3_D_Only\BaseDCalc.cs" />
+    <Compile Include="App\Calculation\Unit\3_D_Only\Calc_Page17_0_Init.cs" />
+    <Compile Include="App\Calculation\Unit\4_PostProcessing\Calc_PostProcessing.cs" />
+    <Compile Include="App\Calculation\Unit\BaseCalc.cs" />
+    <Compile Include="App\Calculation\Unit\0_Always\Calc_Page02_Block1Be.cs" />
+    <Compile Include="App\Calculation\Unit\0_Always\Calc_Page02_Block2Ve.cs" />
+    <Compile Include="App\Calculation\Unit\0_Always\Calc_Page03_BlockGe.cs" />
+    <Compile Include="App\Calculation\Unit\1_Y_Only\Calc_Page11.cs" />
+    <Compile Include="App\Calculation\Unit\1_Y_Only\Calc_Page10.cs" />
+    <Compile Include="App\Calculation\Unit\1_Y_Only\Calc_Page08_09_BlockE1.cs" />
+    <Compile Include="App\Calculation\Unit\2_Qm_Only\Calc_Page12_13_BlockE2.cs" />
+    <Compile Include="App\Calculation\CalcDebugInterruptException.cs" />
+    <Compile Include="App\Calculation\Unit\3_D_Only\Calc_Page17_BlockZe1_1.cs" />
+    <Compile Include="App\Calculation\Unit\3_D_Only\Calc_Page19.cs" />
+    <Compile Include="App\Calculation\Unit\2_Qm_Only\Calc_Page16.cs" />
+    <Compile Include="App\Calculation\Unit\2_Qm_Only\Calc_Page15.cs" />
+    <Compile Include="App\Calculation\Unit\2_Qm_Only\Calc_Page14_BlockE2_7.cs" />
+    <Compile Include="App\Calculation\Unit\2_Qm_Only\Calc_Page14_BlockE2_6.cs" />
+    <Compile Include="App\Constants.cs" />
+    <Compile Include="App\Context.cs" />
+    <Compile Include="App\DI\MyMonitorActivationStrategy.cs" />
+    <Compile Include="App\Entity\Server\BaseDataTableServer.cs" />
+    <Compile Include="App\Entity\Connection\LocalDataTableConnection.cs" />
+    <Compile Include="App\Entity\Server\IDataTableServer.cs" />
+    <Compile Include="App\Entity\Server\LocalDataTableServer.cs" />
+    <Compile Include="App\Calculation\Unit\0_Always\Calc_Page01_BlockA.cs" />
+    <Compile Include="App\Entity\Dump\TablesDump.cs" />
+    <Compile Include="App\Entity\Dump\TablesInfo.cs" />
+    <Compile Include="App\Model\XlColumnTypes.cs" />
+    <Compile Include="App\Model\DatatableWorksheetFiller.cs" />
+    <Compile Include="App\Model\DateAverage.cs" />
+    <Compile Include="App\Model\DateParser.cs" />
+    <Compile Include="App\Model\Decade.cs" />
+    <Compile Include="App\Model\GUI_Items\RadioGroup.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\AllowedRangeItemsRepr.cs" />
+    <Compile Include="App\Model\GUI_Items\Controller\ComboBoxController.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\D2VariantItemsRepr.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\DecadeItemsRepr.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\ForecastTypes.cs" />
+    <Compile Include="App\Repository\TableContract\Contracts\PostsTableContract.cs" />
+    <Compile Include="App\Repository\TableContract\Contracts\CommonTableContract.cs" />
+    <Compile Include="App\Repository\TableContract\Contracts\OperTableContract.cs" />
+    <Compile Include="App\Repository\TableContract\BaseTableContract.cs" />
+    <Compile Include="App\Repository\TableContract\TableContactFactory.cs" />
+    <Compile Include="App\TableProcessing\Cell.cs" />
+    <Compile Include="App\TableProcessing\Column.cs" />
+    <Compile Include="App\TableProcessing\DbTableLoader.cs" />
+    <Compile Include="App\Calculation\MainCalculation.cs" />
+    <Compile Include="App\Calculation\Table\CoeffsTable.cs" />
+    <Compile Include="App\TableProcessing\Mapper\CellMapper.cs" />
+    <Compile Include="App\TableProcessing\Mapper\CombinedCellMapper.cs" />
+    <Compile Include="App\TableProcessing\Mapper\EmptyCellMapper.cs" />
+    <Compile Include="App\TableProcessing\Mapper\ICellMapper.cs" />
+    <Compile Include="App\TableProcessing\Mapper\RoundDoubleCellMapper.cs" />
+    <Compile Include="App\TableProcessing\Mapper\ZeroOrGreaterCellMapper.cs" />
+    <Compile Include="App\TableProcessing\Row.cs" />
+    <Compile Include="App\TableProcessing\Table.cs" />
+    <Compile Include="App\Repository\AllTablesServer.cs" />
+    <Compile Include="App\Entity\Connection\IDataTableConnection.cs" />
+    <Compile Include="App\MyApp.cs" />
+    <Compile Include="App\DI\KernelTools.cs" />
+    <Compile Include="App\Repository\DbConnectedTable.cs" />
+    <Compile Include="App\Repository\Tables.cs" />
+    <Compile Include="App\Calculation\MainCalcTables.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\DayAndMonthItemsRepr.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\DsItemsRepr.cs" />
+    <Compile Include="App\Util\Args.cs" />
+    <Compile Include="App\Util\Etc.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\ItemsRepr.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\NormItemsRepr.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\QpItemsRepr.cs" />
+    <Compile Include="App\Model\GUI_Items\Repr\YearItemsRepr.cs" />
+    <Compile Include="App\Util\ExcelExporter.cs" />
+    <Compile Include="App\Util\Holder.cs" />
+    <Compile Include="App\Window\Calculations\CalculationExtraArgsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Window\Calculations\CalculationExtraArgsForm.Designer.cs">
+      <DependentUpon>CalculationExtraArgsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Window\Calculations\CalculationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Window\Calculations\CalculationsForm.Designer.cs">
+      <DependentUpon>CalculationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Window\WorkerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Window\WorkerForm.Designer.cs">
+      <DependentUpon>WorkerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Window\TablesEdior\TablesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Window\TablesEdior\TablesEditorForm.Designer.cs">
+      <DependentUpon>TablesEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Window\Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\Window\Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App\Repository\TableRepository.cs" />
+    <Content Include="Images\main_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sb.ico" />
+    <Content Include="Tools\sqlite3.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="App\Window\Calculations\CalculationExtraArgsForm.resx">
+      <DependentUpon>CalculationExtraArgsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Window\Calculations\CalculationsForm.resx">
+      <DependentUpon>CalculationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Window\WorkerForm.resx">
+      <DependentUpon>WorkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Window\TablesEdior\TablesEditorForm.resx">
+      <DependentUpon>TablesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\Window\Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="Data\mydb.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.106.0\build\net20\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.106.0\build\net20\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.106.0\build\net20\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.106.0\build\net20\System.Data.SQLite.Core.targets'))" />
+  </Target>
+</Project>
